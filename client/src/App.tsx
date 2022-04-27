@@ -43,7 +43,7 @@ function App() {
             <Wilder key={wilder._id} {...wilder} />
           ))}
         </CardRow>
-        <h2>COUCOU</h2>
+        <h2>COUCOU C'est Moi ! </h2>
       </Container>
       <Footer>
         <Container>
