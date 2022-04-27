@@ -17,13 +17,13 @@ const ALL_WILDERS = gql`
 
 export type WilderData = {
   _id: string
-  name:string
+  name: string
   city: string
 }
 
 function App() {
-  
-  const { loading, error, data } = useQuery<{wilders:WilderData[]}>(ALL_WILDERS);
+
+  const { loading, error, data } = useQuery<{ wilders: WilderData[] }>(ALL_WILDERS);
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error : {error.message}</p>;
   return (
@@ -43,6 +43,7 @@ function App() {
             <Wilder key={wilder._id} {...wilder} />
           ))}
         </CardRow>
+        <h2>COUCOU</h2>
       </Container>
       <Footer>
         <Container>
